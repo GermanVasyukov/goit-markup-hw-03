@@ -111,6 +111,13 @@ header{
 .contacts .link:focus {
     color: var(--accent-color);
 }
+.contacts li::before{
+    content: "";
+    display: inline-block;
+    background-color: aqua;
+    width: 20px;
+    height: 20px;
+}
 /* hero */
 .hero{
     background-color: #2F303A;
@@ -250,7 +257,43 @@ header{
     line-height: 19px;
     text-align: center;
     letter-spacing: 0.03em;
+    
+    
+}
+.icon-list{
+    display: flex;
+    
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 16px;
     margin-bottom: 30px;
+    border-radius: 50%;
+}
+.networks:not(:last-child){
+    margin-right: 10px;
+}
+.networks{
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #AFB1B8;
+}
+.networks:hover,
+.networks:focus{
+    cursor: pointer;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    fill: #FFFFFF;
+}
+.networks-icon{
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+}
+.networks-icon:hover{
+    fill: #FFFFFF;
 }
 
 /* copyright */
