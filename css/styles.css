@@ -130,11 +130,15 @@ header{
 }
 /* hero */
 .hero{
-    background-color: #2F303A;
     padding: 160px 0 240px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.background{
+    background-image: url(../images/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero .title{
